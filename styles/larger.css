@@ -1,0 +1,16 @@
+
+@media (max-width: 768px) {
+  header {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 5px;
+  }
+
+  main {
+      flex-direction: column;
+  }
+}
