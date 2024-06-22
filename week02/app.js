@@ -12,9 +12,14 @@ function addChapter() {
 
         const deleteButton = document.createElement('button');
         deleteButton.textContent = 'Delete';
-        deleteButton.onclick = function() {
-            chapterList.removeChild(li);
-        };
+        // deleteButton.onclick = function() {
+        //     chapterList.removeChild(li);
+        // };
+
+
+     deleteButton.addEventListener('click', () =>{
+                chapterList.remove();
+     })
 
         li.appendChild(deleteButton);
         chapterList.appendChild(li);
