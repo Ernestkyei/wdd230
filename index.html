@@ -8,16 +8,23 @@
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
-    <div class="container">
+    <!-- <div class="container"> -->
+
+        <button class="toggle">Dark mode</button>
         <header>
             <div class="profile">
                 <img src="images/Ernest.jpg" alt="Rubia M. Francesco">
                 <h1>Ernest N. Kyei</h1>
             </div>
             <nav>
-                <ul>
+                <div class="hamburger" id="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <ul class="nav-list" id="nav-list">
                     <li><a href="#">Home</a></li>
-                    <li><a href="">Chamber</a></li>
+                    <li><a href="chamber/index.html">Chamber</a></li>
                     <li><a href="week01/site-plan.html">Site Plan</a></li>
                     <li><a href="#">Form</a></li>
                 </ul>
@@ -28,8 +35,8 @@
                 <h2>WDD 230: Web Frontend Development</h2>
                 <h3>Learning Activities</h3>
                 <ul>
-                    <li>Week 01: <a href="week01/holygrail.html"> Layout</a> | <a href="#">Media Query</a> | <a href="#">JS Pen</a></li>
-                    <li>Week 02: <a href="https://codepen.io/ijromerob/pen/ZENrEXP">Hamburger Menu</a>|<a href="https://codepen.io/Ernest-Kyei/pen/OJYvvwm">Design principles</a>|<a href="week02/bom.html">DOM Manipulation</a></li> 
+                    <li>Week 01: <a href="week01/holygrail.html"> Layout</a></li>
+                    <li>Week 02: <a href="https://codepen.io/ijromerob/pen/ZENrEXP">Hamburger Menu</a> |<a href="https://codepen.io/Ernest-Kyei/pen/OJYvvwm"> Design principles</a>|<a href="week02/bom.html"> DOM Manipulation</a></li> 
                     <li>Week 03:</li>
                     <li>Week 04:</li>
                     <li>Week 05:</li>  
@@ -44,11 +51,11 @@
             </section>
         </main>
         <footer>
-            <p>&copy;2024 🌺 Ernest Nkansah Kyei 🌺 Ghana </p>
-            <p id="last-odificmation">Last Modification: 01/01/1970 12:00:00</p>
+            <p>&copy;2024 Ernest Nkansah Kyei  Ghana </p>
+            <p id="last-odificmation">Last Modification: 01/01/1970 12:00:00 </p>
             <p>Copyright &copy; Brigham Young University-Idaho | All rights reserved</p>
         </footer>
-    </div>
+    <!-- </div> -->
 
 
     <script src="scripts/getDates.js"></script>

@@ -1,0 +1,207 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center;
+  position: relative; /* Needed for positioning the absolute nav-list */
+  height: 5em;
+}
+
+.logo {
+  position: relative;
+  height: 50px;
+  width: 50px;
+  margin-right: 960px;
+}
+
+h1,
+p {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  align-content: center;
+  color: #161212;
+  font-weight: bolder;
+}
+
+.display-info {
+  margin-top: -300px;
+  display: block;
+}
+
+.display {
+  color: #0077b6;
+  font-weight: bolder;
+}
+
+img {
+  width: 100%;
+  height: 20em;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 60px;
+    right: 0; /* Align nav-list to the right on small screens */
+    background-color: #333;
+    width: 100%;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.3s ease;
+    left: auto;
+  }
+
+  .nav-list li {
+    margin: 20px 0;
+  }
+
+  .nav-list.show {
+    right: 0; /* Slide-in from the right */
+  }
+
+  .nav-list.hide {
+    right: -100%; /* Hide off-screen to the right */
+  }
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+.call-to-action a {
+  display: block;
+  padding: 10px;
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.call-to-action {
+  margin-top: 12em;
+}
+.current-events,
+.weather-card,
+.company-spotlights {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+footer {
+  text-align: center;
+  
+}
+
+.footer{
+    color: #fff;
+}
+footer p {
+  margin: 5px 0;
+}
+
+.hero img {
+  height: 30em;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  display: block;
+  height: 60px;
+}
+
+
+
+:root{
+  --primary-color: #000;
+  --secondary-color:#fff;
+
+}
+
+html.dark{
+  --primary-color:#fff;
+   --secondary-color:#000;   
+}
+
+
+html.dark{
+  background-color: #000;
+  color: var(--primary-color);
+
+}
+
+
+.toggle{
+  cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 100px;
+}
+
+
+.toggle:focus{
+  outline: none;
+
+}

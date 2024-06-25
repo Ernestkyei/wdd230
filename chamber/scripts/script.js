@@ -1,5 +1,6 @@
-
 const toggle = document.querySelector('.toggle');
+
+
 toggle.addEventListener("click", (e) =>{
     const  body  = document.querySelector("html")
     if(body.classList.contains('dark')){
@@ -7,23 +8,23 @@ toggle.addEventListener("click", (e) =>{
             e.target.innerHTML = 'Dark mode'
     }   else{
         body.classList.add('dark')
-        e.target.innerHTML ='light mode';
+        e.target.innerHTML ='light mode'
     }
 
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
- 
-    // Get the current date
-    const currentDate = new Date();
-    
-     const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
-    const formattedDate = currentDate.toLocaleDateString('en-US', options);
 
-   
-    document.getElementById("last-odificmation").textContent = `Last Modification: ${formattedDate}`;
+
+
+
+
+
+document.querySelector('.hamburger').addEventListener('click', () => {
+    document.querySelector('nav ul').classList.toggle('show');
 });
+
+document.getElementById('lastModified').textContent = document.lastModified;
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -32,5 +33,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     hamburger.addEventListener('click', () => {
         navList.classList.toggle('show');
+        navList.classList.toggle('hide');
     });
 });
+
+
+
+
+
+
