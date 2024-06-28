@@ -212,3 +212,16 @@ footer {
         left: 0;
     }
 }
+
+
+.map-container{
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.accra-temple{
+    height: 50em;
+    width: 100em;
+}
