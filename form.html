@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+  <link rel="stylesheet" href="styles/forms.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <h1>BYU-I Web Frontend Development I</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="form.html">Form</a></li> <!-- Link to the current form page -->
+        <!-- Add other navigation links as needed -->
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- Main Content -->
+<main>
+  <div class="container">
+    <h2>Form Example</h2>
+    <form action="record.html" method="get">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" pattern="[a-zA-Z0-9]{8,}" required>
+      </div>
+      <div class="form-group">
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" pattern="[a-zA-Z0-9]{8,}" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" required>
+      </div>
+      <div class="form-group">
+        <label for="rating">Page Rating:</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="ratingValue.value = rating.value">
+        <output id="ratingValue">5</output>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit Form</button>
+      </div>
+    </form>
+  </div>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; Brigham Young University-Idaho. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
