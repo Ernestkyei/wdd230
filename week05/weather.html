@@ -3,60 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="weather.css">
     <title>weather API</title>
 </head>
 <body>
-    <style>
-        body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
-}
 
-h1 {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
-    margin: 0;
-}
-
-main {
-    margin: 2rem auto;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-}
-
-p {
-    font-size: 1.2rem;
-}
-
-figure {
-    margin: 1rem 0;
-}
-
-img {
-    width: 100px;
-    height: 100px;
-}
-
-footer {
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #4CAF50;
-    color: white;
-}
-
-
-
-    </style>
-
-    <header>
+     <header>
         <h1>OpenWeatherMap API Test</h1>
     </header>
     <main>
@@ -70,50 +22,9 @@ footer {
         Kyei Ernest | OpenWeatherMap.org | CC BY-SA 4.0
     </footer>
 
-    <script>
-// Select HTML elements in the document
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-
-// API URL and key
-const lat = 49.75; // Latitude for Trier, Germany
-const lon = 6.64; // Longitude for Trier, Germany
-const apiKey = '653c9148e986f9bdc284882d03031ef2'; // Replace with your actual API key
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
-
-// Async function to fetch weather data
-async function apiFetch() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data); // Check data in console
-            displayResults(data);
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-// Function to display results
-function displayResults(data) {
-    const temp = data.main.temp;
-    const desc = data.weather[0].description;
-    const icon = data.weather[0].icon;
-
-    currentTemp.textContent = `${temp.toFixed(1)}°F`;
-    captionDesc.textContent = desc;
-    weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${icon}@2x.png`);
-    weatherIcon.setAttribute('alt', desc);
-}
-
-// Call the function
-apiFetch();
-
-    </script>
+    <script src="weather.js"></script>
+/
+   
     
 </body>
 </html>
