@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Company A",
+            "address": "123 Main St, City, State",
+            "phone": "123-456-7890",
+            "website": "http://www.companya.com",
+            "membershipLevel": "Gold",
+            "otherInfo": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        {
+            "name": "Company B",
+            "address": "456 Oak Ave, City, State",
+            "phone": "234-567-8901",
+            "website": "http://www.companyb.com",
+           "membershipLevel": "Silver",
+            "otherInfo": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "name": "Company C",
+            "address": "789 Pine St, City, State",
+            "phone": "345-678-9012",
+            "website": "http://www.companyc.com",
+            "membershipLevel": "Platinum",
+            "otherInfo": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        },
+        {
+            "name": "Company D",
+            "address": "101 Maple Rd, City, State",
+            "phone": "456-789-0123",
+            "website": "http://www.companyd.com",
+            "membershipLevel": "Gold",
+            "otherInfo": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Company E",
+            "address": "202 Birch St, City, State",
+            "phone": "567-890-1234",
+            "website": "http://www.companye.com",
+            "membershipLevel": "Silver",
+            "otherInfo": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "name": "Company F",
+            "address": "303 Cedar Rd, City, State",
+            "phone": "678-901-2345",
+            "website": "http://www.companyf.com",
+            "membershipLevel": "Bronze",
+            "otherInfo": "Curabitur pretium tincidunt lacus. Nulla gravida orci a odio."
+        },
+        {
+            "name": "Company G",
+            "address": "404 Elm St, City, State",
+            "phone": "789-012-3456",
+            "website": "http://www.companyg.com",
+            "membershipLevel": "Platinum",
+            "otherInfo": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+        }
+    ]
+}
