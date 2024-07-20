@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (lastVisit) {
         const daysBetweenVisits = Math.floor((now - lastVisit) / (1000 * 60 * 60 * 24));
-
         if (daysBetweenVisits < 1) {
             visitMessage.textContent = "Back so soon! Awesome!";
         } else if (daysBetweenVisits === 1) {

@@ -16,7 +16,6 @@ function toggleView(viewType) {
 }
 
 toggleView('grid');
-
 document.addEventListener('DOMContentLoaded', function() {
     fetch('scripts/members.json')
         .then(response => response.json())
